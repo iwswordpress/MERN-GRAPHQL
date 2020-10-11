@@ -6,6 +6,7 @@ import moment from 'moment';
 function PostCard({
   post: { body, createdAt, id, username, likeCount, commentCount, likes }
 }) {
+  // Start component
   function likePost() {
     console.log('Like post!!');
   }

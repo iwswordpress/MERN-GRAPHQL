@@ -1,4 +1,10 @@
 * {
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
+}
+
+.page-title {
+  display: block;
+  text-align: center;
+  margin: 10px 0;
 }

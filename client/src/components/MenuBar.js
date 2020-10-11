@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Menu } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 
 function MenuBar() {
@@ -7,40 +6,19 @@ function MenuBar() {
 
   const path = pathname === '/' ? 'home' : pathname.substr(1);
   console.log(pathname, path);
-  const [activeItem, setActiveItem] = useState(path);
-
-  const handleItemClick = (e, { name }) => {
-    console.log(name);
-    setActiveItem(name);
-  };
 
   return (
-    <Menu pointing secondary size='massive' color='teal'>
-      <Menu.Item
-        name='home'
-        active={activeItem === 'home'}
-        onClick={handleItemClick}
-        as={Link}
-        to='/'
-      />
-
-      <Menu.Menu position='right'>
-        <Menu.Item
-          name='login'
-          active={activeItem === 'login'}
-          onClick={handleItemClick}
-          as={Link}
-          to='/login'
-        />
-        <Menu.Item
-          name='register'
-          active={activeItem === 'register'}
-          onClick={handleItemClick}
-          as={Link}
-          to='/register'
-        />
-      </Menu.Menu>
-    </Menu>
+    <div className='menu-desktop'>
+      <Link name='home' as={Link} to='/' className='menu-item'>
+        HOME
+      </Link>
+      <Link name='login' as={Link} to='/login' className='menu-item'>
+        LOGIN
+      </Link>
+      <Link name='register' as={Link} to='/register' className='menu-item'>
+        REGISTER
+      </Link>
+    </div>
   );
 }
 

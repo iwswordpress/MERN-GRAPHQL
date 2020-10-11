@@ -15,7 +15,7 @@ function PostCard({
     console.log('Comment on post!!');
   }
   return (
-    <Card fluid>
+    <Card fluid style={{ maxWidth: '400px' }}>
       <Card.Content>
         <Image
           floated='right'

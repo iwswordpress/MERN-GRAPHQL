@@ -2,7 +2,15 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
 }
-
+.menu-desktop {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.menu-item {
+  margin: 5px 20px;
+  font-size: 28px;
+}
 .page-title {
   display: block;
   text-align: center;

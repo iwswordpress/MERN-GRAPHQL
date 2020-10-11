@@ -12,13 +12,16 @@ function Home() {
 
   return (
     <div>
-      <h1>Recent Posts</h1>
-
-      {loading ? (
-        <h1>Loading posts..</h1>
-      ) : (
-        posts && posts.map(post => <PostCard post={post} key={post.id} />)
-      )}
+      <div style={{ textAlign: 'center' }}>
+        <h1>Recent Posts</h1>
+      </div>
+      <div className='flex-cards'>
+        {loading ? (
+          <h1>Loading posts..</h1>
+        ) : (
+          posts && posts.map(post => <PostCard post={post} key={post.id} />)
+        )}
+      </div>
     </div>
   );
 }

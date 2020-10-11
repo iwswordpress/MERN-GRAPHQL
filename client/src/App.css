@@ -2,6 +2,9 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
 }
+.container {
+  border: 2px solid #ccc;
+}
 .menu-desktop {
   display: flex;
   justify-content: center;
@@ -11,8 +14,27 @@
   margin: 5px 20px;
   font-size: 28px;
 }
+
+.card {
+  width: 350px;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+}
+.avatar {
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin: 5px;
+}
 .page-title {
   display: block;
   text-align: center;
-  margin: 10px 0;
+  margin: 10px 20px;
+}
+.flex-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }

@@ -25,7 +25,7 @@ function Register(props) {
       <div className='form-container'>
         <form>
           <div class='form-group'>
-            <label for='username'>Username</label>
+            <label htmlFor='username'>Username</label>
             <input
               name='username'
               type='text'
@@ -36,7 +36,7 @@ function Register(props) {
             />
           </div>
           <div class='form-group'>
-            <label for='email'>Email</label>
+            <label htmlFor='email'>Email</label>
             <input
               name='email'
               type='text'
@@ -47,7 +47,7 @@ function Register(props) {
             />
           </div>
           <div class='form-group'>
-            <label for='password'>Password</label>
+            <label htmlFor='password'>Password</label>
             <input
               name='password'
               type='text'
@@ -58,7 +58,7 @@ function Register(props) {
             />
           </div>
           <div class='form-group'>
-            <label for='confirmPassword'>Confirm password</label>
+            <label htmlFor='confirmPassword'>Confirm password</label>
             <input
               name='confirmPassword'
               type='text'

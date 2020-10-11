@@ -12,6 +12,10 @@ function MenuBar() {
       <Link name='home' as={Link} to='/' className='menu-item'>
         HOME
       </Link>
+
+      <Link name='events' as={Link} to='/events' className='menu-item'>
+        EVENTS
+      </Link>
       <Link name='login' as={Link} to='/login' className='menu-item'>
         LOGIN
       </Link>

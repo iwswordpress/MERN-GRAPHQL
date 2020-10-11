@@ -11,6 +11,11 @@ module.exports = gql`
     likeCount: Int!
     commentCount: Int!
   }
+  type Event {
+    id: ID!
+    body: String!
+    createdAt: String!
+  }
   type User {
     id: ID!
     email: String!
@@ -39,6 +44,7 @@ module.exports = gql`
     getPosts: [Post]
     getPost(postId: ID!): Post
     getPost2(postId: ID!): Post
+    getEvents: [Event]
   }
   type Mutation {
     register(registerInput: RegisterInput): User!
